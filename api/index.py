@@ -9,7 +9,7 @@ from http.server import BaseHTTPRequestHandler
 
 CLIENT_ID = os.environ.get("SPOTIFY_CLIENT_ID")
 CLIENT_SECRET = os.environ.get("SPOTIFY_CLIENT_SECRET")
-REDIRECT_URI = "https://adimax-five.vercel.app/api/callback"
+REDIRECT_URI = "https://adimaxspotify.vercel.app/api/callback"
 
 SCOPE = "user-read-private user-read-email"
 
