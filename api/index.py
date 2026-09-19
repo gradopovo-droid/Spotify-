@@ -7,8 +7,8 @@ import json
 from http.server import BaseHTTPRequestHandler
 
 
-CLIENT_ID = os.environ.get("3b62d71b7a5748eb84d28f52a5970664")
-CLIENT_SECRET = os.environ.get("91d356b32c004e708fd2d0c43fac27ec")
+CLIENT_ID = os.environ.get("SPOTIFY_CLIENT_ID")
+CLIENT_SECRET = os.environ.get("SPOTIFY_CLIENT_SECRET")
 REDIRECT_URI = "https://adimax-five.vercel.app/api/callback"
 
 SCOPE = "user-read-private user-read-email"
@@ -309,4 +309,4 @@ class handler(BaseHTTPRequestHandler):
         self.send_html(
             "<h1>404</h1><p>Page not found.</p>",
             404
-          )
+        )
